@@ -1,0 +1,113 @@
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link href='https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEN-TECH</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <div id='container'>
+        <div id='bubbles'>
+            <img src="bubble.png">
+            <img src="bubble.png">
+            <img src="bubble.png">
+            <img src="bubble.png">
+            <img src="bubble.png">
+            <img src="bubble.png">
+            <img src="bubble.png">
+            <img src="bubble.png">
+        </div>
+        <div id='homepage'>
+            <h1 id='heading'>
+                <div id='introducing'>INTRODUCING</div>
+                <div id='laptop_name'>Lenovo IdeaPad Slim 3</div>
+            </h1>
+            <div id='imgfeatures'>
+                <img id='showimg'>
+                <div id='features'>
+                    <div class='card'>OPERATING SYSTEM: WINDOWS 10<br>BRAND: LENOVO<br>WEIGHT:1.5KG<br>SCREEN SIZE: 15.6 INCHES<br>AVAILABLE IN(COLORS): GREY/ARCTIC/NAVY<br>COST: ₹ 39,999</div>
+                    <div class='card'>COST EFFECTIVE<br>PORTABLE<br>LIGHTWEIGHT</div>
+                    <div class='card'>2 YEAR WARRANTY<br>INBUILT TOUCHSCREEN INPUT<br>GET A FREE STYLUS WORTH ₹ 1,499</div>
+                    <div class='card'><button id='ordernow' onclick='appear()'>ORDER NOW</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='order'>
+        <form id="form">
+            <a href='#a' id='close' onclick="disappear()">X</a>
+            <marquee><b>COST OF LAPTOP: ₹39,999</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ONLY CASH ON DELIVERY ACCEPTED</marquee>
+            <div class="name">
+                <div>
+                    <div><label for="fname" name="fname"> FIRST NAME: </label></div>
+                    <div><input required type="text" id="fname" placeholder="enter first name"></div>
+                </div>
+                <div>
+                    <div><label for="lname" name="lname"> LAST NAME: </label></div>
+                    <div><input required type="text" id="lname" placeholder="enter last name"></div>
+                </div>
+            </div>
+            <div class='details'>
+                <div class="number">
+                    <div><label for="number" name="number"> PHONE NUMBER: </label></div>
+                    <div><input required type="text" id="number" placeholder="enter phone number" pattern="[789][0-9]{9}" title="phone number must be 10 digits long and must start with 7, 8 or 9.">
+                    </div>
+                </div>
+                <div class="email">
+                    <div><label for="email" name="email"> EMAIL: </label></div>
+                    <div><input required pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="Please enter a valid Email Id" type="email" id="email" placeholder="enter email">
+                    </div>
+                </div>
+                <div class="address">
+                    <div><label for="address" name="address"> ADDRESS: </label></div>
+                    <div><input required type="text" id="address" placeholder="enter address"></div>
+                </div>
+            </div>
+            <div class='location'>
+                <div class="state">
+                    <div><label for="state" name="state"> STATE: </label></div>
+                    <div><input required type="text" id="state" placeholder="enter state"></div>
+                </div>
+                <div class="city">
+                    <div><label for="city" name="city"> CITY: </label></div>
+                    <div><input required type="text" id="city" placeholder="enter city"></div>
+                </div>
+                <div class="pincode">
+                    <div><label for="pincode" name="pincode"> PINCODE: </label></div>
+                    <div><input required type="text" id="pincode" placeholder="enter pincode"></div>
+                </div>
+            </div>
+            <div class="color">
+                <div><label for="color" name="state"> COLOR: </label></div>
+                <div><select required name="color" id="color">
+                  <option disabled selected value="">--choose</option>
+                  <option id='arctic' value="arctic">ARCTIC</option>
+          <option id='grey' value="grey">GREY</option>
+          <option id='navy' value="navy">NAVY</option>
+          </select>
+                </div>
+            </div>
+            <div class='submit'>
+                <input type='submit' id='submit'>
+            </div>
+
+        </form>
+    </div>
+    <img id='logo' src='logo.png'>
+
+    <script src='app.js'></script>
+</body>
+
+</html>
